@@ -69,7 +69,7 @@ def to_camel_case(underscore_str):
     prev = 'a'
     for i in underscore_str:
         if i != '_':
-            if (prev == '_' and camelcase_str) or i.isupper():
+            if (prev == '_' and camelcase_str) or i.isupper() and camelcase_str[-1].islower():
                 camelcase_str += i.upper()
             else:
                 camelcase_str += i.lower()
