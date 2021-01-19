@@ -28,7 +28,7 @@ def digits_to_words(input_string):
             >>> tp2.digits_to_words(digits_str2)
             'three one four one five'
     """
-    numbers = ['zero', 'one', 'tow', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+    numbers = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
     digit_string = ' '.join([numbers[int(i)] for i in input_string if i.isdigit()])
     return digit_string
 
